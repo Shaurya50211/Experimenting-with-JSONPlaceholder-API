@@ -30,7 +30,10 @@ function showImages(photos) {
     photos.forEach(photo => {
         const img = document.createElement("img")
         img.src = photo.url
+        let title = document.createElement("p")
+        // title.style.position = "absolute"
+        title.innerText = photo.title
         images.appendChild(img)
-        // TODO: Add Caption
+        images.appendChild(title)
     })
 }
