@@ -33,7 +33,12 @@ function showImages(photos) {
         let title = document.createElement("p")
         // title.style.position = "absolute"
         title.innerText = photo.title
-        images.appendChild(img)
-        images.appendChild(title)
+        
+        let imageDiv = document.createElement("div")
+        imageDiv.classList.add("imageDiv")
+        imageDiv.appendChild(img)
+        imageDiv.appendChild(title)
+
+        images.appendChild(imageDiv)
     })
 }
